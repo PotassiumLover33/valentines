@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="css/valentines.css" />
+  </head>
+  <body>
+    <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
+    <button class="answerButton" onclick="location.href='yippee.html'">
+      Yes
+    </button>
+    <button class="answerButton" id="noButton">No :(</button>
+    <br />
+    <img id="cat" src="images/silly.jpg" class="responsive" style="width: 50%; height: 300px;" />
+    <br />
+    <label id="please" style="font-size: larger;">Pleaaaaaasssssseeeeeee xxxxxxxxxxxxxxxxxx</label>
+    <br />
+    <br />
+    <br />
+    <label style="font-size: large;">Hello baby I love youuuuuu (the mostest)
+
+    <script>
+        var phrases = [
+            "WHY DID YOU PICK NO!!!!!",
+            "YOU'RE NOT ALLOWED TO PICK NO",
+            "JUST SAY YOU HATE ME!!!!!!!!",
+            "THIS IS THE MOST MEAN!!",
+            "PLS STOP >:((((((",
+        ];
+        var currentIndex = 0;
+      
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+            var please = document.getElementById("please")
+            please.textContent = phrases[currentIndex % phrases.length]
+            currentIndex++
+
+            var cat = document.getElementById("cat")
+            cat.src = "images/angry.jpg"
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Courier";
+    font-size: small;
+    background-color: #ffd5d5;
+    color: #ff6161;
+  }
+  #thankyou {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    font-family: "courier";
+    margin-bottom: 20px;
+    background-color: #ffe3e1;
+    color: #e67373;
+    border-radius: 12px;
+    border: 2px solid #ffe3e1;
+    box-shadow: 1px 1px 2px #ff9494;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #ff9494;
+    color: #ffe3e1;
+    border: 2px solid #ff9494;
+    box-shadow: 1px 1px 2px #ffe3e1;
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center aligns images within the container */
+    align-items: center; /* Ensures vertical alignment */
+    flex-wrap: wrap; /* Wraps images if they overflow */
+}
+
+.image-container img {
+    max-width: 100%; /* Makes sure images are responsive */
+    height: auto; /* Keeps the height proportional */
+}
