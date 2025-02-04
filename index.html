@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="css/valentines.css" />
   </head>
   <body>
+    <br />
+    <br />
     <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
     <button class="answerButton" onclick="location.href='yippee.html'">
       Yes
     </button>
     <button class="answerButton" id="noButton">No :(</button>
     <br />
-    <img id="cat" src="images/silly.jpg" class="responsive" style="width: 50%; height: 300px;" />
+    <br />
+    <div id="imageContainer" style="width: 50%;">
+      <img id="cat" src="images/silly.jpg" class="responsive" style="height: 400px; width: 100%" />
+      <img id="flowers" src="images/flowers3.png" class="overlay"/>
+    </div>
+    <br />
+    <br />
     <br />
     <label id="please" style="font-size: larger;">Pleaaaaaasssssseeeeeee xxxxxxxxxxxxxxxxxx</label>
     <br />
@@ -40,6 +48,8 @@
 
             var cat = document.getElementById("cat")
             cat.src = "images/angry.jpg"
+            var flowers = document.getElementById("flowers")
+            flowers.src = ""
         });
     </script>
   </body>
